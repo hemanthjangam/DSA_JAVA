@@ -25,7 +25,6 @@ class SecondLargest {
         for (int i = 0; i < n; i++) {
             array[i] = input.nextInt();
         }
-
         int result = second_largest(array, n);
         System.out.println(result);
         input.close();
