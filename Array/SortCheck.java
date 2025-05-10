@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 class SortCheck {
     static boolean check(int[] array, int n){
+        //Hello
         for(int i = 1; i < n; i++){
             if(array[i] < array[i - 1]){
                 return false;
