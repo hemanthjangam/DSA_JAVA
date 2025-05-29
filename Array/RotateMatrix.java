@@ -3,7 +3,7 @@ package Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
+// Rotate the matrix right 90'
 public class RotateMatrix {
 
     static void rotate(int[][] matrix, int n){
