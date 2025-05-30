@@ -43,9 +43,9 @@ public class PascalsTriangle {
 
     // static int nCr(int n, int c){
     //     long res = 1;
-    //     for(int i = 0; i < c; i++){
-    //         res = res * (n - i);
-    //         res = res / (i + 1);
+    //     for(int col = 0; col < c; col++){
+    //         res = res * (n - col);
+    //         res = res / (col + 1);
     //     }
     //     return (int) res;
     // }
