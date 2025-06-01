@@ -2,7 +2,7 @@
 
 This repository contains Java implementations of various Data Structures and Algorithms (DSA) problems. It is structured to support systematic practice and revision for coding interviews and placement preparation.
 
-## 📁 Folder Structure
+##  Folder Structure
 
 - **Array**  
   Contains Java solutions to fundamental and advanced problems related to arrays. These include operations like searching, sorting, sliding window, and more.
@@ -16,30 +16,30 @@ This repository contains Java implementations of various Data Structures and Alg
 - **Sorting**  
   Implementations of standard sorting algorithms like Bubble Sort, Merge Sort, Quick Sort, Insertion Sort, etc., with code written from scratch in Java.
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - **Language:** Java  
 - **Tools:** VS Code / IntelliJ IDEA, Git, GitHub
 
-## 🚀 Purpose
+##  Purpose
 
 This repository is part of my journey to strengthen my problem-solving skills in Java. It aligns with placement preparation, specifically targeting:
 - Mastery over DSA concepts
 - Cracking technical interviews
 - Practicing consistency with Git and GitHub
 
-## ✅ Future Additions
+##  Future Additions
 
 - Linked List, Stack, Queue
 - Trees and Graphs
 - Dynamic Programming
 - System Design Notes (maybe!)
 
-## 🤝 Contributing
+##  Contributing
 
 This is a personal practice repository, but feel free to fork it or get inspiration for your own DSA practice repo.
 
-## 📌 References
+##  References
 
 - [Striver's A2Z DSA Sheet](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)
 - [LeetCode](https://leetcode.com/)
