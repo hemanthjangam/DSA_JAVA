@@ -48,6 +48,6 @@ This is a personal practice repository, but feel free to fork it or get inspirat
 
 ---
 
-> 📅 Last updated: June 1, 2025  
+> Last updated: June 1, 2025  
 > Maintained by: [hemanthjangam](https://github.com/hemanthjangam)
 
