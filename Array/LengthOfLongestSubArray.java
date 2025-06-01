@@ -20,18 +20,15 @@ public class LengthOfLongestSubArray {
     static void subarrayLength(int[] nums, int n){
         int max = 0;
         // Brute-force approach with time complexity n^2
-        // for(int i = 0; i < n; i++){
-        //     int sum = 0;
-        //     for(int j = i; j < n; j++){
-        //         sum += nums[j];
-        //         if(sum == 0){
-        //             largestLen = Math.max(max, j - i + 1);
-        //         }
-        //     }
-        // }
-
-        
-
+        for(int i = 0; i < n; i++){
+            int sum = 0;
+            for(int j = i; j < n; j++){
+                sum += nums[j];
+                if(sum == 0){
+                    max = Math.max(max, j - i + 1);
+                }
+            }
+        }
         System.out.println(max);
     }
     public static void main(String[] args) {
