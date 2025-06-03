@@ -6,32 +6,31 @@ import java.util.Scanner;
 
 public class MergeSort {
     static void merge(int[] nums, int low, int mid, int high){
-        ArrayList<Integer> temp = new ArrayList<>();
+       ArrayList<Integer> temp = new ArrayList<>();
         int left = low;
         int right = mid + 1;
 
-        while(left <= mid && right <= high){
-            if(nums[left] <= nums[right]){
+        while(left <= mid && right <= high) {
+            if(nums[left] <= nums[right]) {
                 temp.add(nums[left]);
                 left++;
-            }
-            else{
+            }else {
                 temp.add(nums[right]);
                 right++;
             }
         }
 
-        while(left <= mid){
+        while(left <= mid) {
             temp.add(nums[left]);
             left++;
         }
-        
-        while(right <= high){
+
+        while(right <= high) {
             temp.add(nums[right]);
             right++;
         }
 
-        for(int i = low; i <= high; i++){
+        for(int i = low; i <= high; i++) {
             nums[i] = temp.get(i - low);
         }
     }
