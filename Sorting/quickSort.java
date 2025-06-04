@@ -3,7 +3,7 @@ package Sorting;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class quickSort {
+public class QuickSort {
     static int partition(int[] nums, int low, int high) {
         int pivot = nums[low];
 
