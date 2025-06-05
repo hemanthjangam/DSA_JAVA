@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Scanner;
 
-public class InsertArray {
+public class ArrayInsertPosition {
     static void search(int[] nums, int k) {
         int index = 0;
         for(int i = 1; i < nums.length; i++) {
