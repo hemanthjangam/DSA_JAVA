@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class LowerBound {
     public static int search(int[] nums, int low, int high, int target) {
-        int index = 0;
-        while(low < high) {
+        int index = nums.length;
+        while(low <= high) {
             int mid = (low + high) / 2;
             if(nums[mid] >= target) {
                 index = mid;
