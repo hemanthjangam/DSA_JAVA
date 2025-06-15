@@ -42,7 +42,7 @@ public class FirstLL {
         Node head = convertArr2LL(nums);
         Node temp = head;
         while(temp != null) {
-            System.out.print(temp.data + " ");
+            System.out.print(temp.data + "->");
             temp = temp.next;
         }
     }
