@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLL;
 
 // Definition of a Node class used in linked lists
 class Node {
