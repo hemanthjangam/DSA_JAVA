@@ -56,7 +56,7 @@ public class InsertNode {
         Node head = n1;
 
         printList(head);
-
+        
         System.out.println();
         head = insert(5, n1);
 
