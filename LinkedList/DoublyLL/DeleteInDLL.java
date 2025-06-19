@@ -63,23 +63,55 @@ public class DeleteInDLL {
         return head;
     }
 
+    private static Node deleteNth(Node head, int k) {
+        Node temp = head;
+        int count = 0;
+
+        while(temp != null) {
+            count++;
+            if(count == k) break;
+            temp = temp.next;
+        }
+
+        Node prev = temp.back;
+        Node front = temp.next;
+
+        if(prev == null && front == null) {
+            head = null;
+        }else if(prev == null) {
+            deleteHead(head);
+        }else if(front == null) {
+            deleteTail(head);
+        }else {
+            prev.next = front;
+            front.back = prev;
+            temp.next = null;
+            temp.back = null;
+        }
+
+        return head;
+    }
     public static void main(String[] args) {
         int[] nums = {2, 5, 6, 1, 0};
         Node head = createDLL(nums);
         printDLL(head);
-        // delete head of DLL
+        // // delete head of DLL
 
-        head = deleteHead(head);
+        // head = deleteHead(head);
+        // System.out.println();
+        // printDLL(head);
+
+
+        // // delete tail of DLL
+
+        // head = deleteTail(head);
+        // System.out.println();
+        // printDLL(head);
+
+        
+        // delete nth node
+        head = deleteNth(head, 2);
         System.out.println();
         printDLL(head);
-
-
-        // delete tail of DLL
-
-        head = deleteTail(head);
-        System.out.println();
-        printDLL(head);
-
-
     }
 }
