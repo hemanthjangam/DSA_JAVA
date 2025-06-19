@@ -47,13 +47,37 @@ public class DeleteInDLL {
 
         return head;
     }
-    
+
+    private static Node deleteTail(Node head) {
+        if(head == null || head.next == null) return null;
+
+        Node temp = head;
+        while(temp.next != null) {
+            temp = temp.next; 
+        }
+
+        temp.back.next = null;
+
+        return head;
+    }
+
     public static void main(String[] args) {
         int[] nums = {2, 5, 6, 1, 0};
         Node head = createDLL(nums);
         printDLL(head);
+        // delete head of DLL
+
         head = deleteHead(head);
         System.out.println();
         printDLL(head);
+
+
+        // delete tail of DLL
+
+        head = deleteTail(head);
+        System.out.println();
+        printDLL(head);
+
+
     }
 }
