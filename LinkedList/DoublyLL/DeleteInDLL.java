@@ -47,6 +47,7 @@ public class DeleteInDLL {
 
         return head;
     }
+    
     public static void main(String[] args) {
         int[] nums = {2, 5, 6, 1, 0};
         Node head = createDLL(nums);
