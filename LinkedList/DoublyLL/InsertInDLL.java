@@ -60,6 +60,23 @@ public class InsertInDLL {
         return head;
     }
 
+    private static Node beforeKth(Node head, int val, int k) {
+        Node kth = head;
+        if(k == 1) return beforeHead(head, val);
+        int count = 0;
+        while(kth != null) {
+            count++;
+            if(count == k) break;
+            kth = kth.next;
+        }
+        
+        Node prev = kth.back;
+        Node newNode = new Node(val, kth, prev);
+        prev.next = newNode;
+        kth.back = newNode;
+        return head;
+    }
+
     public static void main(String[] args) {
         int[] nums = {2, 5, 6, 1, 0};
         Node head = createDLL(nums);
@@ -71,7 +88,12 @@ public class InsertInDLL {
         // printDLL(head);
 
         // insert node before tail
-        head = beforeTail(head, 0);
+        // head = beforeTail(head, 0);
+        // System.out.println();
+        // printDLL(head);
+
+        // insert node before kth position
+        head = beforeKth(head, 5, 1);
         System.out.println();
         printDLL(head);
     }
