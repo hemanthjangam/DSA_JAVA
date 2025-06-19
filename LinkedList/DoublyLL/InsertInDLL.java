@@ -83,14 +83,14 @@ public class InsertInDLL {
         printDLL(head);
 
         // insert a node before heaad
-        // head = beforeHead(head, 9);
-        // System.out.println();
-        // printDLL(head);
+        head = beforeHead(head, 9);
+        System.out.println();
+        printDLL(head);
 
         // insert node before tail
-        // head = beforeTail(head, 0);
-        // System.out.println();
-        // printDLL(head);
+        head = beforeTail(head, 0);
+        System.out.println();
+        printDLL(head);
 
         // insert node before kth position
         head = beforeKth(head, 5, 1);
