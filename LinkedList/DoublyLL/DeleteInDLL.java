@@ -37,6 +37,7 @@ public class DeleteInDLL {
         }
     }
 
+
     private static Node deleteHead(Node head) {
         if(head == null || head.next == null) return null;
         Node prev = head;
@@ -91,6 +92,8 @@ public class DeleteInDLL {
 
         return head;
     }
+
+    
     public static void main(String[] args) {
         int[] nums = {2, 5, 6, 1, 0};
         Node head = createDLL(nums);
