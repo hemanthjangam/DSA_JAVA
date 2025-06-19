@@ -1,4 +1,4 @@
-# JavaPracDSA
+# DSA_JAVA
 
 This repository contains Java implementations of various Data Structures and Algorithms (DSA) problems. It is structured to support systematic practice and revision for coding interviews and placement preparation.
 
