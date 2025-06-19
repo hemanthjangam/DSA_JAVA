@@ -51,12 +51,14 @@ public class DeleteInDLL {
     private static Node deleteTail(Node head) {
         if(head == null || head.next == null) return null;
 
-        Node temp = head;
-        while(temp.next != null) {
-            temp = temp.next; 
+        Node tail = head;
+        while(tail.next != null) {
+            tail = tail.next; 
         }
 
-        temp.back.next = null;
+        Node prev = tail.back;
+        prev.next = null;
+        tail.back = null;
 
         return head;
     }
