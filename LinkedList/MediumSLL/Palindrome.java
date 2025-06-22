@@ -48,6 +48,7 @@ public class Palindrome {
         }
         return prev;
     }
+    
     private static boolean palindrome(Node head) {
         Node slow = head, fast = head;
         while(fast.next != null && fast.next.next != null) {
@@ -68,7 +69,7 @@ public class Palindrome {
         return true;
     }
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 3, 2};
+        int[] nums = {1, 2, 3, 3, 2, 1};
         Node head = createLl(nums);
         printList(head);
         boolean result = palindrome(head);
