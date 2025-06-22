@@ -1,7 +1,7 @@
 package LinkedList.MediumSLL;
 
-import java.util.HashMap;
-import java.util.Map;
+// import java.util.HashMap;
+// import java.util.Map;
 
 // Problem statement:
 // detect a loop in a linked list
@@ -10,12 +10,6 @@ import java.util.Map;
 // LL : 1 -> 2 -> 3 -> 4 -> 5
 //                    ^     |
 //                    |_____|
-// Output = true
-
-// Example2:
-// LL: 1 -> 2 -> 5 -> 6 -> 7 -> 8 -> 9
-//               ^                   |
-//               |___________________|                    
 // Output = true
 
 // Example2:
