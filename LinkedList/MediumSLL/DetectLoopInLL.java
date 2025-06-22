@@ -54,12 +54,24 @@ public class DetectLoopInLL {
         return head;
     }
 
+    // Brute force approach usiing Hash map TC = O(N) SC = O(N)
+    // private static boolean detect(Node head) {
+    //     Map<Node, Integer> map = new HashMap<>();
+    //     while(head != null) {
+    //         if(map.containsKey(head)) return true;
+    //         map.put(head, 1);
+    //         head = head.next;
+    //     }
+    //     return false;
+    // }
+
+    // optimal approach by using tortoise hare algorithm TC = O(N) Sc = O(1)
     private static boolean detect(Node head) {
-        Map<Node, Integer> map = new HashMap<>();
-        while(head != null) {
-            if(map.containsKey(head)) return true;
-            map.put(head, 1);
-            head = head.next;
+        Node slow = head, fast = head;
+        while(fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast) return true;
         }
         return false;
     }
