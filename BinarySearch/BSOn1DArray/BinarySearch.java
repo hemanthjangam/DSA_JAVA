@@ -1,7 +1,7 @@
 package BinarySearch.BSOn1DArray;
 
 import java.util.Scanner;
-
+// nums ={1, 2, 3, 4, 5, 6, 7} 2
 public class BinarySearch {
     public static int search(int[] nums, int low, int high, int target) {
         while(low < high) {
