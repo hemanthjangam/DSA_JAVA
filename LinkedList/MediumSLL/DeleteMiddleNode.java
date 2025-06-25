@@ -34,14 +34,14 @@ public class DeleteMiddleNode {
         }
     }
 
-    private static int length(Node head) {
-        int count = 0;
-        while (head != null) {
-            count++;
-            head = head.next;
-        }
-        return count;
-    }
+    // private static int length(Node head) {
+    //     int count = 0;
+    //     while (head != null) {
+    //         count++;
+    //         head = head.next;
+    //     }
+    //     return count;
+    // }
 
     // Brute-force approach by using len/2 
     // private static Node deleteMid(Node head) {
