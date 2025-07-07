@@ -1,18 +1,18 @@
 package Recursion;
 
 public class Pattern {
-    public static void printPattern(int row, int col, int n) {
-        if(row > n) return;
+    public static void printPattern(int row, int col) {
+        if(row == 0) return;
         if(col < row) {
+            printPattern(row,  col + 1);
             System.out.print("*");
-            printPattern(row, col + 1, n);
         }else {
+            printPattern(row - 1, 0);
             System.out.println();
-            printPattern(row + 1, 0, n);
         }
     }
     public static void main(String[] args) {
         int n = 5;
-        printPattern(1, 0, n);
+        printPattern(n, 0);
     }
 }
