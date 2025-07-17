@@ -15,7 +15,7 @@ class Node {
     }
 }
 
-public class ReverseLL {
+class ReverseLL {
     private static void printList(Node head) {
         Node curr = head;
         while (curr != null) {

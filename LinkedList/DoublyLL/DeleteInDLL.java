@@ -18,7 +18,7 @@ class Node {
     }
 }
 
-public class DeleteInDLL {
+class DeleteInDLL {
     private static Node createDLL(int[] nums) {
         Node head = new Node(nums[0]);
         Node prev = head;

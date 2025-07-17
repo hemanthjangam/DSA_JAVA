@@ -15,7 +15,7 @@ class Node {
     }
 }
 
-public class SeggregateEvenOdd {
+class SeggregateEvenOdd {
 
     private static void printList(Node head) {
         Node curr = head;

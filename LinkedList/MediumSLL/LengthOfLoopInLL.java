@@ -24,7 +24,7 @@ class Node {
     }
 }
 
-public class LengthOfLoopInLL {
+class LengthOfLoopInLL {
 
     private static Node createLl(int[] nums) {
         Node head = new Node(nums[0]);

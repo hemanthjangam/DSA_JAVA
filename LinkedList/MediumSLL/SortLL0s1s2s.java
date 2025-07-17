@@ -1,6 +1,6 @@
 package LinkedList.MediumSLL;
 
-public class SortLL0s1s2s {
+class SortLL0s1s2s {
     private static Node createLL(int[] nums) {
         Node head = new Node(nums[0]);
         Node temp = head;

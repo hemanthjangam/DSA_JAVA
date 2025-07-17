@@ -31,7 +31,7 @@ class Node {
     }
 }
 
-public class DetectLoopInLL {
+class DetectLoopInLL {
 
     private static Node createLl(int[] nums) {
         Node head = new Node(nums[0]);

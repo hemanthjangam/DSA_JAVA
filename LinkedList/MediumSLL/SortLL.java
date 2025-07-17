@@ -15,7 +15,7 @@ class Node {
     }
 }
 
-public class SortLL {
+class SortLL {
     private static void printLL(Node head) {
         while(head != null) {
             System.out.print(head.data + "->");

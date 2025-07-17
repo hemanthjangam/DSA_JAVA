@@ -16,7 +16,7 @@ class Node {
 }
 
 
-public class Palindrome {
+class Palindrome {
     private static void printList(Node head) {
         Node curr = head;
         while (curr != null) {

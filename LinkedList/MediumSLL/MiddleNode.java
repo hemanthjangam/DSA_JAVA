@@ -30,7 +30,7 @@ class Node {
     }
 }
 
-public class MiddleNode {
+class MiddleNode {
 
     private static void printList(Node head) {
         Node curr = head;

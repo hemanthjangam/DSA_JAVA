@@ -32,7 +32,7 @@ class Node {
     }
 }
 
-public class RemoveNthNode {
+class RemoveNthNode {
     private static Node createLL(int[] nums) {
         Node head = new Node(nums[0]);
         Node temp = head;
