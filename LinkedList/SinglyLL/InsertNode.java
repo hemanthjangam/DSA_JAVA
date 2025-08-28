@@ -15,20 +15,7 @@ package LinkedList.SinglyLL;
 // Explanation: Again, we need to insert the value 100 before the head of the Linked List.
 
 
-class Node {
-    int data;
-    Node next;
-    
-    Node(int data1, Node next1) {
-        this.data = data1;
-        this.next = next1;
-    }
 
-    Node(int data1) {
-        this.data = data1;
-        this.next = null;
-    }
-}
 
 class InsertNode {
 
