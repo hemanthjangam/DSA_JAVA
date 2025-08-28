@@ -15,7 +15,7 @@ class Node {
     }
 }
 
-public class LengthOfLL {
+class LengthOfLL {
 
     private static int length(Node head) {
         Node cur = head;

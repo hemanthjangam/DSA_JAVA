@@ -17,20 +17,6 @@ package LinkedList.MediumSLL;
 // therefore, we remove 3 from the linked list.
 
 
-class Node {
-    int data;
-    Node next;
-
-    Node(int data1, Node next1) {
-        this.data = data1;
-        this.next = next1;
-    }
-
-    Node(int data1) {
-        this.data = data1;
-        this.next = null;
-    }
-}
 
 class RemoveNthNode {
     private static Node createLL(int[] nums) {

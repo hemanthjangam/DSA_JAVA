@@ -27,7 +27,7 @@ class Node {
 
 }
 
-public class DeleteNode {
+class DeleteNode {
 
     private static void printLL(Node head) {
         Node cur = head;

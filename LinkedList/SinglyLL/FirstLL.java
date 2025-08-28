@@ -22,7 +22,7 @@ class Node {
 }
 
 
-public class FirstLL {
+class FirstLL {
 
     private static Node convertArr2LL(int[] nums) {
         Node head = new Node(nums[0]);       // Step 1: Create the head node using the first element

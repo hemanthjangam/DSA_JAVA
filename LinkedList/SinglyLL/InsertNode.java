@@ -30,7 +30,7 @@ class Node {
     }
 }
 
-public class InsertNode {
+class InsertNode {
 
     private static Node insert(int val,Node  head) {
         Node temp = new Node(val, head);

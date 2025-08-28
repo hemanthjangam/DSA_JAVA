@@ -15,20 +15,6 @@ package LinkedList.MediumSLL;
 // Explanation:  In this example, the linked list has an even number of nodes hence we return the second middle node which is 4.
 
 
-class Node {
-    int data;
-    Node next;
-
-    Node(int data1, Node next1) {
-        this.data = data1;
-        this.next = next1;
-    }
-
-    Node(int data1) {
-        this.data = data1;
-        this.next = null;
-    }
-}
 
 class MiddleNode {
 

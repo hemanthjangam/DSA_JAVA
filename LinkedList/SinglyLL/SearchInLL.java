@@ -15,7 +15,7 @@ class Node {
     }
 }
 
-public class SearchInLL {
+class SearchInLL {
 
     private static boolean search(Node head, int target) {
         Node cur = head;
