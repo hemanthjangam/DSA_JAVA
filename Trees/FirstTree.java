@@ -22,13 +22,13 @@ public class FirstTree {
 
     // insert elements
     public void populate(Scanner scanner) {
-        System.out.println("Enter the root Node : ");
+        System.out.println("Enter value of root : ");
         int value = scanner.nextInt();
         root = new Node(value);
         populate(scanner, root);
     }
 
-    private void populate(Scanner scanner, Node node) {
+    public void populate(Scanner scanner, Node node) {
         System.out.println("Do you want to enter left of " + node.value);
         boolean left = scanner.nextBoolean();
         if(left) {
@@ -41,24 +41,28 @@ public class FirstTree {
         System.out.println("Do you want to enter right of " + node.value);
         boolean right = scanner.nextBoolean();
         if(right) {
-            System.out.println("Enter the value of the right of " + node.value);
+            System.out.println("Enter the value of the left of " + node.value);
             int value = scanner.nextInt();
             node.right = new Node(value);
             populate(scanner, node.right);
         }
     }
 
+    // Display tree in a pretty way 
+    //     |---->9
+    // 15
+    // |       |---->14
+    // |---->6
+    // |       |       |---->10
+    // |       |---->8
     public void prettyDisplay() {
         prettyDisplay(root, 0);
     }
 
     private void prettyDisplay(Node node, int level) {
-        if(node == null) {
-            return;
-        }
+        if(node == null) return;
 
         prettyDisplay(node.right, level + 1);
-
         if(level != 0) {
             for(int i = 0; i < level - 1; i++) {
                 System.out.print("|\t");
